@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 const port = 1999;
 
-// Mongoose connection to MongoDB
+// Mongoose connection to MongoDB locally, change this if you want to run it in MLab, Atlas etc
 mongoose.connect('mongodb://127.0.0.1:27017/heroku_stuff', { useNewUrlParser: true }, function (error) {
     if (error) {
         console.log(error);
